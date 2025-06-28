@@ -4,10 +4,6 @@ from main import BooksCollector
 
 class TestBooksCollector:
 
-    @pytest.fixture
-    def collector(self):
-        return BooksCollector()
-
     # 1. Параметризованные тесты для add_new_book - проверка добалвения книг с разными тестовыми данными (в т.ч. граничные значения)
     @pytest.mark.parametrize(
         'name, to_be_added',
